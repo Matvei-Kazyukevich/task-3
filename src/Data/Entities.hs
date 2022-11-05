@@ -1,4 +1,4 @@
-module Data.Entities (Product(..), Shop(..), Order(..), Customer(..), OrderProduct(..), productID, productShopID, productName, productPrice, productColor) where
+module Data.Entities (Product(..), Shop(..), Order(..), Customer(..), productID, productShopID, productName, productPrice, productColor) where
 
 import Data.Base (Color(..))
 
@@ -43,10 +43,4 @@ data Order = Order {
       orderID :: Int
     , orderCustomerID :: Int
     , orderNumber :: String 
-} deriving (Show)
-
-data OrderProduct = OrderProduct {
-    orderProductID :: Int
-  , ordProdOrderID :: Int
-  , ordProdProductID :: Int
 } deriving (Show)
